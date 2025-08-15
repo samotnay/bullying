@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP BULLYING - Presentasi Untuk SD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+        .btn-nav {
+            transition: all 0.3s ease;
+        }
+        .btn-nav:hover {
+            transform: translateY(-3px);
+        }
+        .progress-bar {
+            height: 8px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #4e73df;
+            transition: width 0.4s ease;
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .card {
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-purple-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Progress Bar -->
+        <div class="progress-bar mb-6">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <!-- Slides Container -->
+        <div class="slides-container bg-white rounded-xl shadow-lg overflow-hidden min-h-[60vh]">
+            <!-- Slide 1 - Cover -->
+            <div class="slide active p-8 md:p-12 text-center">
+                <div class="flex flex-col items-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ac7b5b36-67a8-4351-ac2f-0c0a58f9956e.png" alt="Anak-anak SD berbagai ras berpegangan tangan membentuk lingkaran dengan latar belakang cerah" class="rounded-lg shadow-md mb-6" />
+                    <h1 class="text-3xl md:text-5xl font-bold text-blue-600 mb-4">STOP BULLYING</h1>
+                    <h2 class="text-xl md:text-2xl text-purple-600 mb-6">Bersama Kita Bisa Menciptakan Sekolah yang Aman</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl">Presentasi untuk Siswa Sekolah Dasar</p>
+                    <div class="mt-8">
+                        <img src="https://cdn-sekolah.annibuku.com/20514930/2.jpg" alt="Logo sekolah dengan tulisan 'Sekolah Ramah Anak' dalam desain warna-warni" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 - Apa itu Bullying? -->
+            <div class="slide p-8 md:p-12">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <h2 class="text-2xl md:text-3xl font-bold text-blue-600 mb-4">Apa itu Bullying?</h2>
+                        <p class="text-lg text-gray-700 mb-4">Bullying adalah perilaku tidak menyenangkan yang dilakukan secara sengaja, berulang, dan membuat orang lain merasa tidak nyaman atau terluka.</p>
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                            <p class="text-yellow-700"><strong>Contoh:</strong> Mengejek, memukul, menyebar rumor, mengucilkan, atau mengancam teman.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dc19d1f1-3003-4360-9b96-735bd12ca201.png" alt="Ilustrasi anak kecil sedih dikelilingi gambar kata-kata menyakitkan seperti 'bodoh', 'jelek' dengan ekspresi wajah sedih" class="rounded-lg shadow-md floating" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 - Jenis-Jenis Bullying -->
+            <div class="slide p-8 md:p-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-600 mb-8">Jenis-Jenis Bullying</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="card bg-white p-6 rounded-xl shadow-md border-t-4 border-red-400">
+                        <h3 class="text-xl font-bold text-red-600 mb-3">Fisik</h3>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9fd10bc0-77d4-4046-a436-0f45ca223c41.png" alt="Ilustrasi anak tidak setuju dengan tindakan memukul atau mendorong teman" class="w-full rounded mb-3" />
+                        <p>Memukul, mendorong, merusak barang, atau melukai tubuh orang lain.</p>
+                    </div>
+                    <div class="card bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-400">
+                        <h3 class="text-xl font-bold text-blue-600 mb-3">Verbal</h3>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1b4c85c3-43ea-483f-a936-8a255b355870.png" alt="Ilustrasi anak sedih mendengar kata-kata kasar dan ejekan dari teman-temannya" class="w-full rounded mb-3" />
+                        <p>Mengejek, memberi nama panggilan buruk, mengancam, atau menyebar rumor.</p>
+                    </div>
+                    <div class="card bg-white p-6 rounded-xl shadow-md border-t-4 border-purple-400">
+                        <h3 class="text-xl font-bold text-purple-600 mb-3">Psikologis</h3>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fc8a3abd-d6ea-4294-83d3-2410e7e85963.png" alt="Ilustrasi anak dikucilkan dari kelompok teman-temannya dengan ekspresi kesepian" class="w-full rounded mb-3" />
+                        <p>Mengucilkan, memanipulasi, atau membuat orang lain merasa tidak berharga.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 - Dampak Bullying -->
+            <div class="slide p-8 md:p-12">
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="md:w-1/2">
+                        <h2 class="text-2xl md:text-3xl font-bold text-blue-600 mb-4">Dampak Bullying</h2>
+                        <ul class="space-y-4 text-lg text-gray-700 mb-6">
+                            <li class="flex items-start">
+                                <div class="bg-red-100 p-1 rounded-full mr-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Tidak mau sekolah dan prestasi menurun</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-100 p-1 rounded-full mr-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Kehilangan kepercayaan diri</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-100 p-1 rounded-full mr-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Stres, cemas, dan depresi</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-red-100 p-1 rounded-full mr-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span>Masalah kesehatan fisik dan mental jangka panjang</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9c5d748a-4837-4611-8449-9b2e48ad1cc8.png" alt="Ilustrasi anak kecil menangis dengan pikiran negatif seperti 'aku tidak berguna', 'semua membenciku' muncul di sekitar kepalanya" class="rounded-lg shadow-md" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 - Apa yang Harus Dilakukan -->
+            <div class="slide p-8 md:p-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-600 mb-8">Apa yang Harus Dilakukan?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-green-50 p-6 rounded-xl shadow-sm border-l-4 border-green-500">
+                        <div class="flex items-start mb-3">
+                            <div class="bg-green-100 p-2 rounded-full mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-green-600 mb-2">Jika Kamu Korban</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li>Bicara pada orang dewasa yang dipercaya</li>
+                                    <li>Tetap tenang dan jangan membalas</li>
+                                    <li>Berkumpul dengan teman-teman baik</li>
+                                    <li>Ingat, itu bukan salahmu!</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/30af8dd7-08a2-47d3-84ad-9dcf06b57b1b.png" alt="Ilustrasi anak berbicara dengan guru perempuan ramah tentang masalah yang dihadapi" class="w-full rounded-lg shadow mt-4" />
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-sm border-l-4 border-blue-500">
+                        <div class="flex items-start mb-3">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15l8-8m0 0H8m8 0v8" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-600 mb-2">Jika Kamu Saksi</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li>Jangan ikut-ikutan atau diam saja</li>
+                                    <li>Dukung korban dan ajak lapor guru</li>
+                                    <li>Jadi teman yang baik untuk semua</li>
+                                    <li>Beri tahu pelaku bahwa itu salah</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/950fd08a-dd65-4398-be8d-dd14de949ffc.png" alt="Ilustrasi sekelompok anak berdiri bersama melindungi teman yang sedih di tengah" class="w-full rounded-lg shadow mt-4" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6 - Pahlawan Anti Bullying -->
+            <div class="slide p-8 md:p-12 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c7025de5-2eb2-4a48-9d54-899abe888a3c.png" alt="Ilustrasi anak-anak menjadi superhero dengan simbol anti-bullying di dada mereka" class="mx-auto rounded-lg shadow-md mb-8 floating" />
+                    <h2 class="text-3xl md:text-4xl font-bold text-purple-600 mb-6">Jadilah Pahlawan Anti Bullying!</h2>
+                    <div class="bg-white p-6 rounded-xl shadow-sm inline-block max-w-2xl mb-8">
+                        <h3 class="text-xl font-bold text-blue-600 mb-4">Janji Pahlawan Anti Bullying</h3>
+                        <p class="text-lg mb-4">"Aku berjanji akan bersikap baik kepada semua orang, membela teman yang di-bully, dan melapor jika melihat bullying terjadi."</p>
+                        <button onclick="showSignaturePad()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg transition-all">Tanda Tangani Janji Ini</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7 - Signature Pad -->
+            <div class="slide p-8 md:p-12 text-center" id="signature-slide" style="display: none;">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="text-2xl md:text-3xl font-bold text-blue-600 mb-6">Tanda Tangan Janji Anti Bullying</h2>
+                    <canvas id="signature-pad" class="border-2 border-gray-300 rounded-lg mb-4 w-full h-48 bg-white shadow-md"></canvas>
+                    <div class="flex justify-center space-x-4">
+                        <button onclick="clearSignature()" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition-all">Hapus</button>
+                        <button onclick="saveSignature()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition-all">Simpan</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8 - Closing -->
+            <div class="slide p-8 md:p-12 text-center">
+                <div class="flex flex-col items-center max-w-3xl mx-auto">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6064685b-beb7-4ac2-a993-20b881be1412.png" alt="Anak-anak dari berbagai latar belakang tersenyum dan bergandengan tangan dalam harmoni" class="rounded-lg shadow-md mb-8" />
+                    <h1 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 mb-6">Bersama Kita Bisa!</h1>
+                    <p class="text-xl text-gray-700 mb-8">Mari ciptakan lingkungan sekolah yang aman, nyaman, dan penuh kasih sayang untuk semua!</p>
+                    <div class="bg-gradient-to-r from-blue-400 to-purple-500 p-1 rounded-full inline-block">
+                        <div class="bg-white p-4 rounded-full">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/020adbbc-c9aa-4a8d-9159-bf3cbd75a1c9.png" alt="Logo hati dengan tulisan 'No Bullying' di tengahnya" class="w-20 h-20" />
+                        </div>
+                    </div>
+                    <p class="mt-6 text-gray-500">Presentasi Anti Bullying untuk Siswa SD</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between mt-6">
+            <button id="prev-btn" class="btn-nav bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Sebelumnya
+            </button>
+            <span id="slide-info" class="text-gray-600 flex items-center">1 dari 7</span>
+            <button id="next-btn" class="btn-nav bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg flex items-center">
+                Berikutnya
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Slide functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const progressBar = document.getElementById('progress');
+        const slideInfo = document.getElementById('slide-info');
+        
+        // Initialize signature pad
+        let signaturePad = null;
+        
+        function showSlide(n) {
+            if (n >= totalSlides) { n = totalSlides - 1; }
+            if (n < 0) { n = 0; }
+            
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === n) {
+                    slide.classList.add('active');
+                    currentSlide = n;
+                }
+            });
+            
+            // Update progress bar
+            progressBar.style.width = `${((currentSlide + 1) / totalSlides) * 100}%`;
+            
+            // Update slide info
+            slideInfo.textContent = `${currentSlide + 1} dari ${totalSlides}`;
+            
+            // Show/hide navigation buttons
+            document.getElementById('prev-btn').style.display = currentSlide === 0 ? 'none' : 'flex';
+            document.getElementById('next-btn').style.display = currentSlide === totalSlides - 1 ? 'none' : 'flex';
+        }
+        
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+        
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+        
+        function showSignaturePad() {
+            // Hide all slides
+            slides.forEach(slide => slide.style.display = 'none');
+            
+            // Show signature slide
+            document.getElementById('signature-slide').style.display = 'block';
+            
+            // Initialize signature pad if not already done
+            if (!signaturePad) {
+                const canvas = document.getElementById('signature-pad');
+                signaturePad = new SignaturePad(canvas, {
+                    backgroundColor: 'rgba(255, 255, 255, 0)',
+                    penColor: 'rgb(0, 0, 0)'
+                });
+            }
+        }
+        
+        function clearSignature() {
+            if (signaturePad) {
+                signaturePad.clear();
+            }
+        }
+        
+        function saveSignature() {
+            if (signaturePad && !signaturePad.isEmpty()) {
+                alert('Terima kasih telah berjanji untuk melawan bullying!');
+                // Go to closing slide
+                showSlide(totalSlides - 1);
+            } else {
+                alert('Harap tanda tangan terlebih dahulu!');
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(0);
+            
+            // Add event listeners for buttons
+            document.getElementById('next-btn').addEventListener('click', nextSlide);
+            document.getElementById('prev-btn').addEventListener('click', prevSlide);
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') {
+                    nextSlide();
+                } else if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                }
+            });
+            
+            // Load SignaturePad library if needed
+            if (window.location.hash === '#sign') {
+                const script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js';
+                script.onload = showSignaturePad;
+                document.head.appendChild(script);
+            }
+        });
+    </script>
+</body>
+</html>
+
